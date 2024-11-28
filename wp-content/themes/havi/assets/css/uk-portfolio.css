@@ -1,0 +1,15 @@
+/*-------------------------------------------------------
+UK Portfolio
+-------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) {
+	.uk-portfolio__query .columns-3 {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.uk-portfolio__query .columns-3 {
+		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+	}
+}

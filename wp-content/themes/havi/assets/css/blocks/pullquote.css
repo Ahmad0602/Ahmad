@@ -1,0 +1,27 @@
+/*-------------------------------------------------------
+Pullquote
+-------------------------------------------------------*/
+
+.wp-block-pullquote > blockquote {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.wp-block-pullquote > blockquote {
+		margin-left: calc(var(--wp--style--block-gap) * 1.5);
+		margin-right: calc(var(--wp--style--block-gap) * 1.5);
+	}
+}
+
+/*
+Add additional margin to the pullquote block within post content.
+*/
+
+.wp-block-post-content :where(p, span[id^="more"]) + .wp-block-pullquote:not([style*="margin-top"]) {
+	margin-top: calc(var(--wp--style--block-gap) * 2);
+}
+
+.wp-block-post-content :where(p, .wp-block-heading, span[id^="more"]) + .wp-block-pullquote:not([style*="margin-bottom"]):not(:last-child) {
+	margin-bottom: calc(var(--wp--style--block-gap) * 2);
+}

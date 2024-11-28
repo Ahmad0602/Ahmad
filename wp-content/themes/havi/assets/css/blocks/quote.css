@@ -1,0 +1,15 @@
+/*-------------------------------------------------------
+Quote
+-------------------------------------------------------*/
+
+/*
+Add additional margin to the quote block within post content.
+*/
+
+.wp-block-post-content :where(p, span[id^="more"]) + .wp-block-quote:not([style*="margin-top"]) {
+	margin-top: calc(var(--wp--style--block-gap) * 2);
+}
+
+.wp-block-post-content :where(p, .wp-block-heading, span[id^="more"]) + .wp-block-quote:not([style*="margin-bottom"]):not(:last-child) {
+	margin-bottom: calc(var(--wp--style--block-gap) * 2);
+}

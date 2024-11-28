@@ -1,0 +1,146 @@
+/*-------------------------------------------------------
+Patterns
+-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+ Template "Home Personal"
+-------------------------------------------------------*/
+
+@media (min-width: 600px) {
+	.grid--home-personal {
+		gap: var(--wp--preset--spacing--60) var(--wp--preset--spacing--30);
+	}
+
+	.grid--home-personal > * {
+		grid-column: span 4 / auto;
+		margin-block-start: 0 !important;
+	}
+
+	.grid--home-personal .section--about-me {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+	.grid--home-personal .section--about-me {
+		display: flex;
+		gap: var(--wp--preset--spacing--30);
+	}
+
+	.grid--home-personal .section--about-me > * {
+		flex-basis: 50%;
+	}
+
+	.grid--home-personal .section--about-me > .wp-block-heading {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 960px) {
+	.grid--home-personal {
+		gap: 0 var(--wp--preset--spacing--30);
+	}
+
+	.grid--home-personal > * {
+		grid-column: span 4 / auto;
+		grid-row: 1 / -1;
+
+		margin-block-start: 0 !important;
+	}
+
+	.grid--home-personal .section--about-me {
+		grid-column: 9 / 13;
+	}
+}
+
+@media (min-width: 1280px) {
+	.grid--home-personal {
+		gap: 0 var(--wp--preset--spacing--40);
+	}
+}
+
+/*-------------------------------------------------------
+ Section "Services"
+-------------------------------------------------------*/
+
+@media (min-width: 600px) {
+	.section--services .wp-block-columns {
+	  flex-wrap: nowrap !important;
+	}
+}
+
+@media (min-width: 600px) {
+	.section--services .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+		flex-basis: 0 !important;
+		flex-grow: 1;
+	}
+}
+
+/*-------------------------------------------------------
+ Section "Work Experience"
+-------------------------------------------------------*/
+
+@media (min-width: 600px) {
+	.section--work-experience .wp-block-columns {
+	  flex-wrap: nowrap !important;
+	}
+}
+
+@media (min-width: 600px) {
+	.section--work-experience .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+		flex-grow: 0;
+	}
+
+	.section--work-experience .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:first-child {
+		flex-basis: 25% !important;
+	}
+
+	.section--work-experience .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:last-child {
+		flex-basis: 75% !important;
+	}
+}
+
+/*-------------------------------------------------------
+ Section "Get in Touch"
+-------------------------------------------------------*/
+
+@media (min-width: 480px) {
+	.section--get-in-touch .wp-block-columns {
+	  flex-wrap: nowrap !important;
+	}
+}
+
+@media (min-width: 480px) {
+	.section--get-in-touch .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+		flex-basis: 0 !important;
+		flex-grow: 1;
+	}
+}
+
+@media (max-width: 479px) {
+	.section--get-in-touch .wp-block-columns {
+		gap: 0;
+	}
+
+	.section--get-in-touch .wp-block-columns .wp-block-column:last-child p {
+	  text-align: left !important;
+	}
+}
+
+/*-------------------------------------------------------
+ Section "Why I am"
+-------------------------------------------------------*/
+
+@media (min-width: 600px) {
+	.section--why-i-am .wp-block-columns {
+	  flex-wrap: nowrap !important;
+	}
+}
+
+@media (min-width: 600px) {
+	.section--why-i-am .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+		flex-basis: 0 !important;
+		flex-grow: 1;
+	}
+}

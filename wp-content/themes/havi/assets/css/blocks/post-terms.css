@@ -1,0 +1,35 @@
+/*-------------------------------------------------------
+Post terms
+-------------------------------------------------------*/
+
+/*
+Pill
+*/
+
+.wp-block-post-terms.is-style-pill > a {
+	display: inline-block;
+	margin-bottom: 0.75rem;
+}
+
+.wp-block-post-terms.is-style-pill > a:not(:last-child) {
+	margin-right: 0.5rem;
+}
+
+.wp-block-post-terms.is-style-pill > a,
+.is-style-pill span:not([class], [data-rich-text-placeholder]) {
+	padding: 0.375rem 1rem;
+
+	color: var(--wp--preset--color--contrast-2);
+	font-weight: 450;
+	line-height: var(--wp--style--block-gap);
+	background-color: var(--wp--preset--color--contrast-6);
+	border-radius: 2.5rem;
+}
+
+.wp-block-post-terms.is-style-pill > a:hover,
+.wp-block-post-terms.is-style-pill > a:focus,
+.wp-block-post-terms.is-style-pill > a:active {
+	color: var(--wp--preset--color--base);
+	text-decoration: none;
+	background-color: var(--wp--preset--color--contrast);
+}

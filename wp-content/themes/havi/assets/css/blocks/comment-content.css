@@ -1,0 +1,27 @@
+/*-------------------------------------------------------
+Comment content
+-------------------------------------------------------*/
+
+.comment-body .comment-content {
+	margin-top: calc(var(--wp--style--block-gap) / 1.5);
+}
+
+.comment-body .comment-content > * {
+	margin-block-start: var(--wp--style--block-gap);
+	margin-block-end: 0;
+}
+
+.comment-body .comment-content > :first-child {
+	margin-block-start: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.comment-body .comment-content,
+	.comment-body .comment-reply {
+		margin-left: 4rem !important;
+	}
+
+	.wp-block-comment-template li > ol {
+		padding-left: 4rem;
+	}
+}
